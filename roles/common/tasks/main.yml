@@ -1,0 +1,15 @@
+---
+- name: Update all packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: Install baseline tools
+  package:
+    name:
+      - vim
+      - wget
+      - curl
+      - net-tools
+    state: present
+
