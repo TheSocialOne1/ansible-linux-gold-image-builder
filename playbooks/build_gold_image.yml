@@ -1,0 +1,11 @@
+---
+- name: Build Linux Gold Image
+  hosts: linux
+  become: yes
+
+  roles:
+    - common
+    - stig
+    - monitoring
+    - users
+
