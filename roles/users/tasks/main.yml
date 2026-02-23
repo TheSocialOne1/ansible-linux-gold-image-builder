@@ -1,0 +1,8 @@
+---
+- name: Create admin user
+  user:
+    name: secadmin
+    groups: wheel
+    append: yes
+    state: present
+
