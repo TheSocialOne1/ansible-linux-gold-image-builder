@@ -1,0 +1,1 @@
+# ansible-linux-gold-image-builder
