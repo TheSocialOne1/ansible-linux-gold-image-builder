@@ -1,0 +1,14 @@
+---
+- name: Install node exporter
+  package:
+    name: node_exporter
+    state: present
+  ignore_errors: yes
+
+- name: Enable node exporter
+  service:
+    name: node_exporter
+    state: started
+    enabled: yes
+  ignore_errors: yes
+
